@@ -1,0 +1,228 @@
+*{
+  box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial;
+    background-color: #1c1a26;
+}
+
+.topnav
+{
+    background-color: #2c2a36;
+    overflow: hidden;
+}
+
+.topnav a
+{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover
+{
+    background-color: #4c4a56;
+}
+
+.topnav a.active 
+{
+    background-color: #1E88E5;
+    color: white;
+    float: left;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: url("header_image.png")no-repeat;
+    color: white;
+    font-size: 30px;
+}
+
+.maincontainer
+{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.buttoncontainer
+{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* Buttons */
+
+.button-download {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #1E88E5;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .button-download:hover,
+  .button-mymods:focus {
+    background-color: #1E88E5;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+  
+  .button-download:hover {
+    transform: scale(1.03);
+  }
+  
+  .button-download:active {
+    background-color: #1E88E5;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+  }
+
+/* My Apps */
+
+.myapps-header
+{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* Bento Grid designed by ChatGPT*/
+
+/* Style for the Bento Grid container */
+.bento-container {
+  display: flex; /* Use flexbox for horizontal alignment */
+  overflow-y: hidden; /* Hide horizontal overflow to prevent scrolling */
+  justify-content: space-between; /* Horizontal alignment */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for individual boards */
+.board {
+  flex: 1; /* Distribute space evenly among boards */
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 15px; /* Add space between boards (adjust as needed) */
+  margin-bottom: 0px;
+  max-height: 172px; /* Adjust the height as needed to set a new maximum height */
+  width: 370px; /* Adjust the width as needed */
+  height: 250px; /* Adjust the height as needed */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Customize each board as needed */
+.board:nth-child(1) {
+  background-color: #2c2a36;
+}
+
+.board:nth-child(2) {
+  background-color: #2c2a36;
+}
+
+.board:nth-child(3) {
+  background-color: #2c2a36;
+}
+
+/* Add some content and styling to the boards */
+.board-content {
+  text-align: left; /* Align text to the left */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px; /* Adjust the font size for the description text */
+  margin-top: -8px; /* Adjust the distance between title and description */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .bento-container {
+      flex-direction: column; /* Stack boards vertically on smaller screens */
+  }
+
+  .board {
+      margin-bottom: 20px; /* Add space between stacked boards */
+  }
+}
+
+.board-icon {
+  font-size: 24px; /* Adjust icon size as needed */
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+.bento-container h2 {
+  font-size: 25px; /* Adjust the font size for the title text */
+}
+
+.board-link {
+  text-decoration: none; /* Remove underlines from links (if needed) */
+  color: inherit; /* Inherit the text color */
+}
+
+/* Add hover effect */
+.board:hover {
+  background-color: #4c4a56; /* Change to a lighter color on hover */
+  transform: scale(1.01); /* Scale the board up on hover */
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1E88E5; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Add smooth transitions */
+  font-size: 16px;
+  padding: 14px 28px; /* Increase the padding for a larger button */
+}
+
+/* Hover effect: Slightly increase the size */
+.download-button:hover {
+  transform: scale(1.05); /* Scale the button up by 5% on hover */
+  background-color: #2E98F5; /* Change to a brighter color on hover */
+}
+
+.download-message {
+  text-align: center;
+  color: #666; /* Gray text color */
+  margin-top: 150px; /* Add space between download and message */
+}
+
+.box-text {
+  text-align: center;
+}
