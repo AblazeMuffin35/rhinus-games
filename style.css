@@ -231,3 +231,7 @@ body
   border-radius: 5px;
   width: 500px;
 }
+
+.game-author{
+  color: gray
+}
