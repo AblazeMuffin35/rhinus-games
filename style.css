@@ -232,6 +232,6 @@ body
   width: 500px;
 }
 
-.game-author{
-  color: gray;
+span.game-author{
+  opacity: 0.3;
 }
